@@ -4,8 +4,6 @@ from MainWindow import Ui_MainWindow
 from PyQt6.QtGui import QColor, QPainter
 from PyQt6.QtWidgets import QApplication
 from PyQt6.QtWidgets import QMainWindow
-from PyQt6 import uic
-
 
 class Circles(QMainWindow, Ui_MainWindow):
     def __init__(self):
