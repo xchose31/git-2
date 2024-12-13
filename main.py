@@ -16,10 +16,10 @@ class Circles(QMainWindow, Ui_MainWindow):
         if self.do_paint:
             qp = QPainter()
             qp.begin(self)
-            self.draw(qp)
+            self.drawer(qp)
             qp.end()
 
-    def draw(self, qp):
+    def drawer(self, qp):
         qp.setBrush(QColor(randint(0, 255), randint(0, 255), randint(0, 255)))
         r = randint(0, 250)
         qp.drawEllipse(randint(0, 399 - r), randint(0, 561 - r), r, r)
